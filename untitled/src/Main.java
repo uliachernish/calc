@@ -28,12 +28,11 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0))
+            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
             {
-                System.out.println("throws Exception");
+                System.err.println("throws Exception");
                 System.exit(3);
             }
-
             outcalc = i+j;
             str = Integer.toString(outcalc);
         }
@@ -55,12 +54,11 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0))
+            if ((i>10)||(i<0)||(j>10)||(j<0))  //проверка вхождения чисел в диапозон [1;10]
             {
-                System.out.println("throws Exception");
+                System.err.println("throws Exception");
                 System.exit(3);
             }
-
             outcalc = i-j;
             str = Integer.toString(outcalc);
         }
@@ -82,12 +80,11 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0))
+            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
             {
-                System.out.println("throws Exception");
+                System.err.println("throws Exception");
                 System.exit(3);
             }
-
             outcalc = i*j;
             str = Integer.toString(outcalc);
         }
@@ -109,18 +106,17 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0))
+            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
             {
-                System.out.println("throws Exception");
+                System.err.println("throws Exception");
                 System.exit(3);
             }
-
             outcalc = i/j;
             str = Integer.toString(outcalc);
         }
         else if ((index1<0)&&(index2<0)&&(index3<0)&&(index4<0))
         {
-            System.out.println("throws Exception");
+            System.err.println("throws Exception");
             System.exit(4);
         }
         return str;
