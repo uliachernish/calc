@@ -9,11 +9,32 @@ public class Main {
         int index3 = input.indexOf('*');
         int index4 = input.indexOf('/');
         int outcalc=0;
+        String ten="10";
         String str=input;
         if (index1>0)
         {
             String substr1 = input.substring(0,index1);
-            String substr2 = input.substring(index1);
+            String substr2 = input.substring(index1+1);
+            if (substr1.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr1.length()==2)&&(substr1.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            if (substr2.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             int i = 0;
             int j = 0;
             try {
@@ -28,11 +49,6 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
-            {
-                System.err.println("throws Exception");
-                System.exit(3);
-            }
             outcalc = i+j;
             str = Integer.toString(outcalc);
         }
@@ -40,6 +56,26 @@ public class Main {
         {
             String substr3 = input.substring(0,index2);
             String substr4 = input.substring(index2+1);
+            if (substr3.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr3.length()==2)&&(substr3.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            if (substr4.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr4.length()==2)&&(substr4.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             int i = 0;
             int j = 0;
             try {
@@ -54,11 +90,6 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(2);
             }
-            if ((i>10)||(i<0)||(j>10)||(j<0))  //проверка вхождения чисел в диапозон [1;10]
-            {
-                System.err.println("throws Exception");
-                System.exit(3);
-            }
             outcalc = i-j;
             str = Integer.toString(outcalc);
         }
@@ -66,6 +97,26 @@ public class Main {
         {
             String substr1 = input.substring(0,index3);
             String substr2 = input.substring(index3+1);
+            if (substr1.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr1.length()==2)&&(substr1.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            if (substr2.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             int i = 0;
             int j = 0;
             try {
@@ -79,11 +130,6 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.err.println("throws Exception");
                 System.exit(2);
-            }
-            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
-            {
-                System.err.println("throws Exception");
-                System.exit(3);
             }
             outcalc = i*j;
             str = Integer.toString(outcalc);
@@ -92,6 +138,26 @@ public class Main {
         {
             String substr1 = input.substring(0,index4);
             String substr2 = input.substring(index4+1);
+            if (substr1.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr1.length()==2)&&(substr1.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            if (substr2.length()>2)
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             int i = 0;
             int j = 0;
             try {
@@ -105,11 +171,6 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.err.println("throws Exception");
                 System.exit(2);
-            }
-            if ((i>10)||(i<0)||(j>10)||(j<0)) //проверка вхождения чисел в диапозон [1;10]
-            {
-                System.err.println("throws Exception");
-                System.exit(3);
             }
             outcalc = i/j;
             str = Integer.toString(outcalc);
