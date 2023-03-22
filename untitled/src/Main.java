@@ -10,6 +10,7 @@ public class Main {
         int index4 = input.indexOf('/');
         int outcalc=0;
         String ten="10";
+        String nuul="0";
         String str=input;
         if (index1>0)
         {
@@ -25,12 +26,22 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
+            else if ((substr1.length()==1)&&(substr1.compareTo(nuul)==0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             if (substr2.length()>2)
             {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
             else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==1)&&(substr2.compareTo(nuul)==0))
             {
                 System.err.println("throws Exception");
                 System.exit(3);
@@ -66,12 +77,22 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
+            else if ((substr3.length()==1)&&(substr3.compareTo(nuul)==0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             if (substr4.length()>2)
             {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
             else if ((substr4.length()==2)&&(substr4.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr4.length()==1)&&(substr4.compareTo(nuul)==0))
             {
                 System.err.println("throws Exception");
                 System.exit(3);
@@ -107,12 +128,22 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
+            else if ((substr1.length()==1)&&(substr1.compareTo(nuul)==0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             if (substr2.length()>2)
             {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
             else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==1)&&(substr2.compareTo(nuul)==0))
             {
                 System.err.println("throws Exception");
                 System.exit(3);
@@ -148,12 +179,22 @@ public class Main {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
+            else if ((substr1.length()==1)&&(substr1.compareTo(nuul)==0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
             if (substr2.length()>2)
             {
                 System.err.println("throws Exception");
                 System.exit(3);
             }
             else if ((substr2.length()==2)&&(substr2.compareTo(ten)!=0))
+            {
+                System.err.println("throws Exception");
+                System.exit(3);
+            }
+            else if ((substr2.length()==1)&&(substr2.compareTo(nuul)==0))
             {
                 System.err.println("throws Exception");
                 System.exit(3);
